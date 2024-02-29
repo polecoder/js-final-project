@@ -18,6 +18,10 @@ function conversorBase(numero, base) {
 
 // Cuando se hace click en convertir
 document.getElementById('getResult').addEventListener('click', function() {
+  if (document.getElementById('number').value === '') {
+    alert('Debes ingresar un número para continuar.');
+    return;
+  }
   let numero = parseInt(document.getElementById('number').value, 10),
       base = parseInt(document.getElementById('outputBase').value, 10),
       resultado = conversorBase(numero, base);
