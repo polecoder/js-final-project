@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primer entrega - JS Coderhouse</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>Conversor de base</h1>
+  <div class="objective">
+    <h2>Objetivo</h2>
+    <p>Bienvenido a mi proyecto JS para Coderhouse. Esta es una de las preentregas requeridas para dicho proyecto, el objetivo para esta, es realizar un programa básico que interactue con el usuario en JavaScript.</p>
+  </div>
+  <div class="description">
+    <h2>Descripción</h2>
+    <p>Este sistema es una herramienta útil para estudiantes, educadores y profesionales que trabajan con diferentes sistemas numéricos en matemáticas, ciencias de la computación y campos relacionados. Permite a los usuarios convertir fácilmente números del sistema decimal (base 10) a cualquier otra base entre binario (base 2) y hexadecimal (base 16).</p>
+  </div>
+  <main>
+    <form>
+      <div class="user-data">
+        <div class="number-reception">
+          <label for="number">Ingrese su número</label>
+          <input id="number" type="number" required>
+        </div>
+        <div class="base-selector">
+          <label for="outputBase">Base resultado</label>
+          <select name="base" id="outputBase">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16" selected>16</option>
+          </select>
+        </div>
+        <button type="button" id="getResult">Convertir</button>
+      </div>
+    </form>
+    <div class="center-result">
+      <div id="result">.</div>
+    </div>
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+</html>

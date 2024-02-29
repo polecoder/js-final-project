@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+  --main-font: 'Ubuntu', sans-serif;
+  --black: #2B2D42;
+  --white: #EDF2F4;
+  --red: #EF233C;
+}
+
+/*********/
+/* RESET */
+/*********/
+
+/* Para las flechas de arriba y abajo en Chrome, Safari, Edge, y Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*************/
+/* MI CÓDIGO */
+/*************/
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+.objective {
+  padding: 1rem;
+}
+
+.description {
+  padding: 1rem;
+}
+
+.user-data {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.number-reception {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.number-reception label {
+  margin-bottom: .5rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+
+.number-reception input {
+  padding: .5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.base-selector {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.base-selector label {
+  margin-bottom: .5rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+
+.base-selector select {
+  padding: .5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  text-align: end; /* Centra las opciones del dropdown */
+  text-align-last: center;
+}
+
+.user-data button {
+  height: 38px;
+  padding: .5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+#result {
+  padding: 2rem 3rem;
+  background-color: var(--red);
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 5px;
+  display: inline-block;
+}
